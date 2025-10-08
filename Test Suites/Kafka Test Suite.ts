@@ -25,24 +25,6 @@
          </iterationEntity>
          <testDataId>Data Files/Sample Persons</testDataId>
       </testDataLink>
-      <variableLink>
-         <testDataLinkId>52c8e4be-72a9-409b-ac8d-5529c6980105</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>firstName</value>
-         <variableId>59fc8799-9b09-4487-9f74-a644a8155823</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>52c8e4be-72a9-409b-ac8d-5529c6980105</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>lastName</value>
-         <variableId>34b97d2e-dd2d-49b2-995a-7609f2eaad50</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>52c8e4be-72a9-409b-ac8d-5529c6980105</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>age</value>
-         <variableId>48713945-6730-4cb3-82f6-133f12cbafa9</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>f2d94839-c246-4226-93b1-a00db0365be8</guid>

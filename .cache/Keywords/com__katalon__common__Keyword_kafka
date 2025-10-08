@@ -1,0 +1,149 @@
+{
+  "keywordFileContentHash": "F215FFDFB48F4AF24128137A84929DC1",
+  "keywordClasses": [
+    {
+      "name": "com.katalon.common.Keyword_kafka",
+      "keywordMethods": [
+        {
+          "name": "createKafkaConsumer",
+          "parameters": [],
+          "javadoc": "/**\n\t * Create new KafkaConsumer\n\t * @param topic name of topic from which to consume\n\t * @return a KafkaConsumer ready to consume from topic\n\t */"
+        },
+        {
+          "name": "createKafkaProducer",
+          "parameters": [],
+          "javadoc": "/**\n\t * Create new KafkaProducer\n\t * @return a KafkaProducer ready to produce to a topic\n\t */"
+        },
+        {
+          "name": "subscribe",
+          "parameters": [
+            {
+              "name": "consumer",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.apache.kafka.clients.consumer.KafkaConsumer",
+                "unresolvedClassName": "KafkaConsumer",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "topic",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Subscribe consumer to topic\n\t * @param consumer KafkaConsumer\n\t * @param topic name of topic from which to consume\n\t * @return a KafkaConsumer ready to consume from topic\n\t */"
+        },
+        {
+          "name": "fetch",
+          "parameters": [
+            {
+              "name": "consumer",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.apache.kafka.clients.consumer.KafkaConsumer",
+                "unresolvedClassName": "KafkaConsumer",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Fetch a record from a consumer.\n\t * @param consumer KafkaConsumer\n\t * @param topic name of topic from which to consume\n\t * @return a record of some type\n\t */"
+        },
+        {
+          "name": "produce",
+          "parameters": [
+            {
+              "name": "producer",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.apache.kafka.clients.producer.KafkaProducer",
+                "unresolvedClassName": "KafkaProducer",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [
+                  {
+                    "fullClassName": "java.lang.String",
+                    "unresolvedClassName": "String",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  },
+                  {
+                    "fullClassName": "java.lang.String",
+                    "unresolvedClassName": "String",
+                    "isArray": false,
+                    "isGnericsPlaceHolder": false,
+                    "hasImmutableClassName": false,
+                    "genericsTypes": [],
+                    "errorOnParsing": false
+                  }
+                ],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "topic",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "key",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "value",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\n\t * Produce a record to a Kafka topic\n\t * @param producer KafkaProducer\n\t * @param topic name of topic to which to produce\n\t * @param key the key of the record\n\t * @param value the value of the record\n\t * @return metadata related to the produced record\n\t */"
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>payload_data_consumer</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a4ec805a-3896-448b-8aff-ae56f9888bed</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ce55fa10-7116-468f-8459-54e79e630516</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ce55fa10-7116-468f-8459-54e79e630516</id>
+      <masked>false</masked>
+      <name>sharedStore</name>
+   </variable>
+</TestCaseEntity>

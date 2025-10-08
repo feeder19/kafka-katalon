@@ -19,11 +19,17 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import groovy.json.JsonSlurper as JsonSlurper
 import groovy.json.JsonBuilder
-
+/*
+ * berikut adalah Consumer Testcase
+ */
 
 KeywordLogger log = new KeywordLogger()
 
-def response = WS.sendRequest(findTestObject('request_no_kafka/get_data_user', [('baseURL') : GlobalVariable.baseURL]))
+def jsonData =  GlobalVariable.payloadData 
+
+def request = findTestObject('request_no_kafka/post_data_user', [('baseURL') : GlobalVariable.baseURL, ('apikey') : GlobalVariable.apikey, ('body') : jsonData])
+
+def response = WS.sendRequest(request)
 
 def responseBody = response.getResponseBodyContent()
 
@@ -31,7 +37,7 @@ def json = new JsonSlurper().parseText(responseBody)
 
 def status_code = WS.getResponseStatusCode(response)
 
-log.logInfo('Status Code: ' + status_code)
+log.logInfo("Status Code: " + status_code)
 
-log.logInfo('Res: ' + json)
+log.logInfo("Full JSON: " + json.toString())
 

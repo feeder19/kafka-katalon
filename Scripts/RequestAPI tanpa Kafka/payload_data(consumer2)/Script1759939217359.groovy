@@ -16,22 +16,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
-import groovy.json.JsonSlurper as JsonSlurper
-import groovy.json.JsonBuilder
-
-
-KeywordLogger log = new KeywordLogger()
-
-def response = WS.sendRequest(findTestObject('request_no_kafka/get_data_user', [('baseURL') : GlobalVariable.baseURL]))
-
-def responseBody = response.getResponseBodyContent()
-
-def json = new JsonSlurper().parseText(responseBody)
-
-def status_code = WS.getResponseStatusCode(response)
-
-log.logInfo('Status Code: ' + status_code)
-
-log.logInfo('Res: ' + json)
 

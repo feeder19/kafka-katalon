@@ -18,17 +18,24 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import groovy.json.JsonSlurper as JsonSlurper
+import groovy.json.JsonBuilder
+
+
+/*
+ * berikut adalah consumer Testcase
+ */
 
 KeywordLogger log = new KeywordLogger()
 
-def customName = 'morpheus' + new Random().nextInt(999)
 
-def customJob = 'leader'
+def jsonData = GlobalVariable.payloadData 
 
-def request = findTestObject('request_no_kafka/post_data_user', [('baseURL') : GlobalVariable.baseURL, ('apikey') : GlobalVariable.apikey
-        , ('name') : customName, ('job') : customJob])
+println("✅ Payload stored into GlobalVariable:")
 
-// Send request
+log.logInfo('after store data : ' + GlobalVariable.payloadData)
+
+def request = findTestObject('request_no_kafka/post_data_user', [('baseURL') : GlobalVariable.baseURL, ('apikey') : GlobalVariable.apikey, ('body') : jsonData])
+
 def response = WS.sendRequest(request)
 
 def responseBody = response.getResponseBodyContent()
@@ -41,10 +48,6 @@ log.logInfo("Status Code: " + status_code)
 
 log.logInfo("Full JSON: " + json.toString())
 
-log.logInfo('name: ' + customName)
 
-log.logInfo('job: ' + customJob)
-
-log.logInfo('response : ' + customJob)
 
 

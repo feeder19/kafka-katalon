@@ -12,17 +12,29 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>bb30adcd-aa53-4b8d-a2c2-022fd71858cc</testSuiteGuid>
    <testCaseLink>
-      <guid>95b2c2ad-2020-4045-8248-18eb5b0cd084</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/RequestAPI tanpa Kafka/get list data user</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>30c9ecb0-9437-4b5e-8904-22ba93596749</guid>
+      <guid>242026f3-a771-4f98-8993-5022c7316c78</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/RequestAPI tanpa Kafka/create data user</testCaseId>
+      <testCaseId>Test Cases/RequestAPI tanpa Kafka/payload_data(produser2)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8d80a8e4-f2f8-498b-8aaf-f430cbf51672</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f2452d5b-0008-4c9d-9113-fe62167874b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/RequestAPI tanpa Kafka/payload_data_consumer</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ce55fa10-7116-468f-8459-54e79e630516</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

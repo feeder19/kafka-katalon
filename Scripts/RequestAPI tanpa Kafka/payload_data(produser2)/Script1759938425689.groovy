@@ -21,9 +21,34 @@ import groovy.json.JsonSlurper as JsonSlurper
 import groovy.json.JsonBuilder
 
 
+/*
+ * berikut adalah producer Testcase
+ */
+
 KeywordLogger log = new KeywordLogger()
 
-def response = WS.sendRequest(findTestObject('request_no_kafka/get_data_user', [('baseURL') : GlobalVariable.baseURL]))
+def customName = 'morpheus' + new Random().nextInt(999)
+
+def customJob = 'leader'
+
+def userData = [
+	name: customName,
+	job: customJob
+	]
+
+def jsonData = new groovy.json.JsonBuilder(userData).toPrettyString()
+
+GlobalVariable.payloadData = jsonData
+
+println("✅ Payload stored into GlobalVariable:")
+log.logInfo('after store data : ' + GlobalVariable.payloadData)
+
+
+
+/*
+def request = findTestObject('request_no_kafka/post_data_user', [('baseURL') : GlobalVariable.baseURL, ('apikey') : GlobalVariable.apikey, ('name') : customName, ('job') : customJob])
+
+def response = WS.sendRequest(request)
 
 def responseBody = response.getResponseBodyContent()
 
@@ -31,7 +56,17 @@ def json = new JsonSlurper().parseText(responseBody)
 
 def status_code = WS.getResponseStatusCode(response)
 
-log.logInfo('Status Code: ' + status_code)
+log.logInfo("Status Code: " + status_code)
 
-log.logInfo('Res: ' + json)
+log.logInfo("Full JSON: " + json.toString())
+
+log.logInfo('name: ' + customName)
+
+log.logInfo('job: ' + customJob)
+
+log.logInfo('response : ' + customJob)
+
+*/
+
+
 

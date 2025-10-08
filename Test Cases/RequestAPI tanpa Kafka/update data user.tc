@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Kafka Producer Test</name>
+   <name>update data user</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0ced39db-53a1-419b-9ef7-1ecbb76263fd</testCaseGuid>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>92d58de9-46f4-4de9-884d-09641fb506c5</testCaseGuid>
 </TestCaseEntity>

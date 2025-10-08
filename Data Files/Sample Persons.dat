@@ -3,6 +3,7 @@
    <description></description>
    <name>Sample Persons</name>
    <tag></tag>
+   <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>ca893483-91b7-469a-b18b-d3737234fb3b</dataFileGUID>

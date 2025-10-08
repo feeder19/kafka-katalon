@@ -1,0 +1,64 @@
+{
+  "keywordFileContentHash": "FBEF2AFE31D9F18F2E5085F67FBB4A36",
+  "keywordClasses": [
+    {
+      "name": "com.katalon.common.randomData",
+      "keywordMethods": [
+        {
+          "name": "generateRandomTextWithNumber",
+          "parameters": [
+            {
+              "name": "prefix",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "length",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "generateRandomTextWithNumber",
+          "parameters": [
+            {
+              "name": "prefix",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "generateRandomTextWithNumber",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

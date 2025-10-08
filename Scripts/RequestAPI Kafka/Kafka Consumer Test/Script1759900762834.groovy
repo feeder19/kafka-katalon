@@ -16,10 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ResponseObject
-
+import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 import static io.confluent.kafka.serializers.KafkaJsonDeserializerConfig.JSON_VALUE_TYPE
 import static java.lang.System.exit
 import static org.apache.kafka.clients.consumer.ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG
@@ -33,21 +30,22 @@ import org.apache.kafka.clients.consumer.KafkaConsumer as KafkaConsumer
 import org.apache.kafka.common.serialization.StringDeserializer as StringDeserializer
 import java.time.Duration as Duration
 import java.util.Properties as Properties
+import com.kms.katalon.core.logging.KeywordLogger
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import groovy.json.JsonSlurper
 
-KafkaConsumer<String, String> consumer = CustomKeywords.'com.katalon.kafka.KafkaKeywords.createKafkaConsumer'()
+KeywordLogger log = new KeywordLogger()
 
-CustomKeywords.'com.katalon.kafka.KafkaKeywords.subscribe'(consumer, GlobalVariable.kafka_topic)
+def response = WS.sendRequest(findTestObject('request_no_kafka/post_data_user'))
 
-def person = CustomKeywords.'com.katalon.kafka.KafkaKeywords.fetch'(consumer)
+def responseBody = response.getResponseBodyContent()
 
-if (person != null) {
-	println("Consumed record with key $person.key and value $person.value")
+def json = new JsonSlurper().parseText(responseBody)
 
-	def result = WS.validateJsonAgainstSchema(person.value, 'person.json')
-	def personResponse = new ResponseObject()
-	personResponse.setResponseText(person.value)
-	WS.verifyElementPropertyValue(personResponse, "firstName", firstName)
-	WS.verifyElementPropertyValue(personResponse, "lastName", lastName)
-	WS.verifyElementPropertyValue(personResponse, "age", age)
-}
+def status_code  = WS.getResponseStatusCode(response)
+
+log.logInfo("Response Code: " + status_code)
+
+log.logInfo("Response Body: " + json)
+
 

@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "A3880D9F7860529A71F6C5C3B031958B",
+  "keywordClasses": [
+    {
+      "name": "com.katalon.common.kafkaConsumerHelper",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Kafka Consumer Test</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>de53a172-6047-4100-992c-6ce252750ad1</testCaseGuid>
-</TestCaseEntity>

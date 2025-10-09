@@ -21,12 +21,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class randomData {
-	
+
 	@Keyword
 	def generateRandomTextWithNumber(String prefix = "Text", int length = 6) {
 		def chars = ('A'..'Z') + ('a'..'z') + ('0'..'9')
 		def randomPart = (1..length).collect { chars[new Random().nextInt(chars.size())] }.join('')
 		return "${prefix}${randomPart}"
 	}
-	
 }

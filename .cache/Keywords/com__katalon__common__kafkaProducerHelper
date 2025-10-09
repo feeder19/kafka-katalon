@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "297EDD26B25C756F033E62AF25317436",
+  "keywordClasses": [
+    {
+      "name": "com.katalon.common.kafkaProducerHelper",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

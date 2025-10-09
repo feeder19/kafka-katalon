@@ -12,19 +12,17 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>b388bd5f-4def-46e3-8813-98f6e8793b1a</testSuiteGuid>
    <testCaseLink>
-      <guid>f2d94839-c246-4226-93b1-a00db0365be8</guid>
+      <guid>f615845c-bbee-4554-9343-ed78429b3916</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/RequestAPI Kafka/Producer Test</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>72ba4587-2070-4a5e-8190-b4362dfb5044</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/RequestAPI Kafka/Kafka Consumer Test</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>2a73bef9-a5b8-48f8-b164-5a2911b6ecd0</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/Sample Persons</testDataId>
-      </testDataLink>
+      <testCaseId>Test Cases/RequestAPI Kafka/Consumer Test</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
